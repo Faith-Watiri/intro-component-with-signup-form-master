@@ -7,30 +7,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="sytle.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+<div class="wrapper">
+  <section class="left">
+    <h1>Learn to code by watching others</h1>
 
-  Learn to code by watching others
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+</section>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+<section class="right">
+  <h2 class="heading">
+    <span>Try it free 7 days <span>then $20/mo. thereafter
+  </h2>
 
-  Try it free 7 days then $20/mo. thereafter
+  <div class="form-group">
+  <form id="form">
+    <div>
+        <label for="fname"><b></b></label>
+        <input type="text" class="first_name" placeholder="First Name" id="fname">
+        <span><img src="images/icon-error.svg" alt="icon-error" class="icon-error"></span> 
+        <span class="error">First name cannot be empty</span>
+        </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+    <div>
+        <label for="lname"><b></b></label>
+        <input type="text" class="last_name" placeholder="Last Name" id="lname">
+        <span><img src="images/icon-error.svg" alt="icon-error" class="icon-error"></span>
+        <span class="error">Last name cannot be empty</span>
 
-  Claim your free trial 
+        </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
+    <div>
+        <label for="email"><b></b></label>
+        <input type="text" class="email" placeholder="email@example/com" id="email">
+        <span><img src="images/icon-error.svg" alt="icon-error" class="icon-error"></span>
+        <span class="error">Looks like this is not an email</span>
+</div>
+    <div>
+        <label for="Password"><b></b></label>
+        <input type="text" class=password placeholder="Password" id="password">
+        <span><img src="images/icon-error.svg" alt="icon-error" class="icon-error"></span>
+        <span class="error">Password cannot be empty</span>
+        </div>
+
+        <button class="btn btn-green" type="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    
+    </form>
+    </section>
+</div>
+
   
   <footer>
     <p class="attribution">
@@ -38,5 +70,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
+ 
 </body>
 </html>
